@@ -100,7 +100,7 @@ if __name__ == '__main__':
 
 
     if len(sys.argv) > 1:
-        args = parser.parse_args()
+        args, unknown = parser.parse_known_args()
         search_item = args.search_item
         category = "other"
 
